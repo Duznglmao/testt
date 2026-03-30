@@ -1,0 +1,111 @@
+/* Nền mờ bao quanh */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10vh;
+    font-family: sans-serif;
+}
+
+.modal {
+    background: white;
+    width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.close-x {
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+}
+
+.body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group.error label {
+    color: #d93025;
+}
+
+.form-group.error input {
+    border-color: #d93025;
+}
+
+.error-exi {
+    color: #d93025;
+    font-size: 11px;
+    display: block;
+    margin-top: 5px;
+}
+
+.footer {
+    padding: 15px 20px;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-cancel {
+    background: #7f8c8d;
+    color: white;
+}
+
+.btn-save {
+    background: #1a73e8;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
