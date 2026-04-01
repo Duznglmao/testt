@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="icon" href="/assets/images/istockphoto-1616906708-612x612.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <p>QuizzForge</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm bài test">
+        </div>
+        <div class="header-right">
+            <a href="/pages/dashboard.html">Trang chủ</a>
+            <a href="/pages/login.html" onclick="logout()">Đăng xuất</a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h1>Hãy thử 1 câu đố ngẫu nhiên 🎲</h1>
+        <button>Play</button>
+    </div>
+
+    <main>
+        <h2>⭐ Các câu đố nổi bật</h2>
+        <div class="sortByPlay">
+            <p>Sắp xếp theo:</p>
+            <button class="active">Lượt chơi tăng dần</button>
+            <button>Lượt chơi giảm dần</button>
+        </div>
+
+        <div class="card-container"></div>
+
+        <div class="pagination"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Quiz App. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+
+</html> 
